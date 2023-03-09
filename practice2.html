@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         label {
-            float: left;
+            margin-left: 10px;
         }
         div {
             margin-bottom: 10px;
@@ -19,8 +19,7 @@
     <p>HTML, CSS, JavaScript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
     <hr>
     <h3>개인정보</h3>
-    <form action="">
-        <blockquote>
+    <form action="#">
         <div>
             <label for="name">이름</label>
             <input type="text" placeholder="공백없이 입력하세요" id="name">
@@ -29,25 +28,23 @@
             <label for="phone">연락처</label>
             <input type="number" id="phone">
         </div>
-        </blockquote>
         <h3>지원 분야</h3>
-        <blockquote>
-            <label for="webpub">웹 퍼블리싱</label>
-            <input type="radio" id="webpub">
-            <br>
-            <label for="webapp">웹 애플리케이션 개발</label>
-            <input type="radio" id="webapp">
-            <br>
-            <label for="webdev">개발 환경 개선</label>
-        <input type="radio" id="webdev">
-        </blockquote>
+        <form action="#">
+            <input type="radio" name="type" id="webpub" value="웹퍼블리셔">
+			<label for="webpub">웹퍼블리싱</label><br>
+            <input type="radio" name="type" id="webfront" value="웹 프론트앤드">
+			<label for="webfront">웹 프론트앤드</label><br>
+            <input type="radio" name="type" id="mobile" value="모바일 앱">
+			<label for="mobile">모바일 앱</label><br>
+
+        </form>
         <h3>지원동기</h3>
         <div>
             <label for="desc"></label>
             <textarea name="" id="desc" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
         </div>
-        <button>접수하기</button>
-        <button>다시 쓰기</button>
+        <button type="submit">접수하기</button>
+        <button type="submit">다시 쓰기</button>
     </form>
 </body>
 </html>
