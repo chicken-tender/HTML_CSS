@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button 태그 : 새롭게 추가된 요소, 기존의 input에서 type 속성으로 구현하는 버튼 대체 가능 -->
+    <!-- readonly : 읽기 전용 예)'내 정보 보기'해서 서버로부터 정보 가져왔을 때 보여주기만 하고, edit 누르면 활성화 시키는.. -->
+    <!-- disabled : 비활성화 예)회원가입에서 필수 정보가 입력되기 전까지 disabled, 입력 다 되면 disabled 해제 -->
+    <!-- maxlength : 입력할 수 있는 최대 글자 수 제한 -->
+    <!-- placeholder : 입력 요소에 힌트 제공 -->
+    <form action="#">
+        <input type="submit" value="등록">
+        <button type="submit">
+            <img src="./images/facebook.png" alt="이미지가 없습니다.">
+            등록하기
+        </button>
+    </form>
+    <label for="name">이름</label>
+    <input type="text" id="name" readonly><br>
+    <label for="phone">전화번호</label>
+    <input type="text" id="phone" readonly><br><br>
+    <button disabled>확인</button>
+    <button>취소</button>
+
+    <input type="text" maxlength="8">
+
+    <form action="#">
+        <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" value="바나나">
+            <label for="banana">바나나</label><br>
+            <input type="checkbox" id="apple" value="사과">
+            <label for="apple">사과</label><br>
+            <input type="checkbox" id="strawberry" value="딸기">
+            <label for="strawberry">딸기</label><br>
+            <button type="submit">저장</button>
+        </fieldset>
+    </form>
+
+    <input type="tel" placeholder="하이픈(-) 제외">
+    <input type="text" placeholder="힌트 제공">
+
+    <!-- required : 필수 입력 요소임을 나타냄 -->
+    <form action="#">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="id">아이디</label>
+            <input type="text" id="id" required><br>
+            <label for="name">이름</label>
+            <input type="text" id="name" required><br>
+            <button type="submit">제출</button>
+        </fieldset>
+    </form>
+</body>
+</html>
