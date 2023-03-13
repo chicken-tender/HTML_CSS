@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 클래스 선택자</title>
+    <style>
+        /* 가상 클래스 선택자 : 요소의 상태를 이용해 선택자를 지정하는 방법 */
+        /* (1) 링크 가상 클래스 선택자 : a태그에서 발생할 수 있는 링크 상태를 이용해 선택하는 방법 */
+        /* (1)-1 :link - 한번도 방문하지 않은 링크일 때 선택 */
+        /* (1)-2 :visited - 한번이라도 방문한 적이 있는 링크 */
+        a:link {
+            color: cadetblue;
+        }
+        a:visited {
+            color: chocolate;
+        }
+        /* (2) 동적 가상 클래스 선택자 : 마우스를 올리거나 누르는 동작 등에 대한 선택자 */
+        button {
+            width: 200px;
+            height: 40px;
+        }
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+        button:active {
+            background-color: red;
+            color: white;
+        }
+        /* (3) 입력 요소 가상 클래스 선택자 : 입력 요소의 특정 상태를 이용해 선택자로 지정하는 방법 */
+        /* (3)-1 :focus -> 입력 요소에 커서가 활성화되면 선택자로 지정 */
+        /* (3)-2 :checked -> 체크박스가 표시되어 있으면 선택자로 지정 */
+        /* (3)-3 :disabled -> 요소가 비활성화되면 선택자로 지정 */
+        /* (3)-4 :enabled -> 요소가 활성화되면 선택자로 지정 */
+        input:focus {
+            color: red;
+        }
+    
+        input:checked + label {
+            color: red;
+        }
+        input:disabled {
+            background-color: #ccc;
+        }
+        input:enabled {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://kakao.com">카카오</a>
+    <a href="http://blog.naver.com">네이버 블로그</a><br><br>
+    <button>active</button><br><br>
+    <label for="name">이름</label>
+    <input type="text", id="name"><br><br>
+    <input type="checkbox" id="userId">
+    <label for="userId">ID</label><br><br>
+    <button disabled>버튼</button>
+</body>
+</html>
