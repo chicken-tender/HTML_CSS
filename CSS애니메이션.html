@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      background-color: antiquewhite;
+      /* 무한반복 */
+      animation-iteration-count: infinite;
+      animation-name: bgChange;
+      animation-duration: 5s;
+    }
+    @keyframes bgChange {
+      0% {background-color: red;}
+      25% {background-color: orange;}
+      50% {background-color: yellow;}
+      100% {background-color: green;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+</body>
+</html>
