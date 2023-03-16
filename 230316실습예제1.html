@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    .container {
+      width: 304px;
+      height: 390px;
+      margin: 0 auto;
+      border: 1px solid gray;
+      padding: 28px;
+      box-sizing: border-box;
+    }
+    .google {
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid black;
+      width: 228px;
+      height: 44px;
+      line-height: 13px;
+    }
+    .google > p {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+    .google > i {
+      float: left;
+      margin-left: 39px;
+      margin-top: 14px;
+      margin-right: 7px;
+      color: red;
+    }
+    input {
+      width: 228px;
+      height: 44px;
+      border-style: none;
+      background-color: #eaeaea;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .login {
+      width: 228px;
+      height: 44px;
+      background-color: #373f3c;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 0.2px;
+      box-sizing: border-box;
+    }
+    .login > p {
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+    }
+    footer > p {
+      text-align: center;
+      font-size: 14px;
+      color: #2c3432;
+      font-family: 'Roboto', sans-serif;
+    }
+    .content > p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="google">
+      <i class="fa-brands fa-google"></i>
+      <p>Log in with google</p>
+    </div>
+    <div class="content">
+      <p>or</p>
+    </div>
+    <input type="text" id="username" placeholder="Username">
+    <input type="text" id="password" placeholder="Password">
+    <div class="login">
+      <p>LOGIN</p>
+    </div>
+    <footer>
+      <p>Forgot your password?</p>
+    </footer>
+  </div>
+</body>
+</html>

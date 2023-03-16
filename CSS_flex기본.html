@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FLEX Box</title>
+  <style>
+    .flex-container {
+      width: 300px;
+      height: 200px;
+      background-color: bisque;
+      border: 1px solid black;
+      display: flex;
+    }
+    .flex-item {
+      width: 80px;
+      height: 60px;
+      margin: 4px;
+      text-align: center;
+      border: 1px solid darkblue;
+      color: white;
+      background-color: orange;
+      /* 세로 정렬 */
+      display: flex;
+      align-items: center; /* 교차축 */
+      justify-content: center; /* 주축 */
+    }
+    /* .flex-container .flex-item:nth-child(3) {
+      flex-grow: 1;
+      background-color: red;
+    } */
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">item1</div>
+    <div class="flex-item">item2</div>
+    <div class="flex-item">item3</div>
+    <div class="flex-item">item4</div>
+    <div class="flex-item">item5</div>
+    <div class="flex-item">item6</div>
+    <div class="flex-item">item6</div>
+    <div class="flex-item">item6</div>
+  </div>
+</body>
+</html>
