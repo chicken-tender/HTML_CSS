@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header div #logo {
+  width: 140px;
+  margin: 20px;
+}
+header .navibar .quick-menu {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  margin-right: 10px;
+  line-height: 60px;
+  font-size: 0.8em;
+}
+header .navibar2 {
+  margin-top: 7px;
+  position: absolute;
+  right: 0;
+  margin-right: 80px;
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+header .navibar2 p {
+  text-align: center;
+  line-height: 50px;
+  color: #424242;
+  margin-right: 25px;
+  font-size: 0.9em;
+}
+header .navibar2 p img {
+  width: 15px;
+  height: 15px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #424242);
+}
+header .navibar2 p:nth-child(2) {
+  margin-right: 50px;
+}
+main {
+  min-height: 700px;
+}
+main .slide {
+  height: 700px;
+  background-color: blue;
+  display: flex;
+}
+main .slide .product-desc {
+  width: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+main .slide .product-desc h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+main .slide .product-desc p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+main .slide .product-desc .click {
+  width: 130px;
+  height: 50px;
+  background-color: #0067b8;
+  margin-left: 150px;
+  text-align: center;
+  border-radius: 3px;
+}
+main .slide .product-desc .click a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  font-weight: bolder;
+}
+main .slide .product-image {
+  width: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+main .slide .product-image img {
+  width: 100%;
+}
+main .sublink-container {
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sublink-container .sublink-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+main .sublink-container .sublink-item .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+main .sublink-container .sublink-item .icon img {
+  width: 40px;
+  height: 40px;
+}
+main .sublink-container .sublink-item a {
+  color: #0067b8;
+  font-weight: bolder;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+main .product {
+  height: 450px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+main .product .product-item {
+  margin: 15px;
+  width: 380px;
+  height: 210px;
+}
+main .product .product-item h1 {
+  text-align: left;
+  font-size: 1.8em;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-weight: bolder;
+}
+main .product .product-item p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+main .product .product-item a {
+  text-decoration: none;
+  color: #0067b8;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+main .etc {
+  margin-top: 30px;
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+}
+main .etc p {
+  line-height: 30px;
+  margin-left: 120px;
+  margin-right: 30px;
+}
+main .etc img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+footer nav {
+  background-color: #eee;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+footer nav div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+footer nav div .main-menu {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  text-align: left;
+  color: #6b6b6b;
+  font-size: 1.17em;
+  font-weight: 600;
+}
+footer nav div .sub-menu {
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 0.8em;
+}
