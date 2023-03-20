@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    #container {
+      width: 700px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 .";
+      column-gap: 5px;
+      row-gap: 5px;
+    }
+    .box {
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 15px;
+      border: 1px solid darkgray;
+      display: flex;
+      flex-direction: column;
+    }
+    .box p {
+      font-size: 0.9em;
+      font-weight: lighter;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box box1">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-1.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box2">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-2.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box3">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-3.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box4">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-4.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box5">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-5.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box6">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-6.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box7">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-7.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+    <div class="box box8">
+      <h3>사진 제목</h3>
+      <img src="./images/cup-1.jpg" alt="">
+      <p>사진 설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, numquam, Neque mollitia esse blanditils facere.</p>
+    </div>
+  </div>
+</body>
+</html>
