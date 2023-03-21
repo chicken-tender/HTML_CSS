@@ -180,7 +180,7 @@ footer nav {
   height: 450px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
 }
 footer nav div {
