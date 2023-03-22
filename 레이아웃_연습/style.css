@@ -22,12 +22,14 @@ header .navibar .quick-menu {
   font-size: 0.8em;
 }
 header .navibar2 {
-  margin-top: 7px;
   position: absolute;
   right: 0;
   margin-right: 80px;
   display: flex;
-  align-content: flex-end;
+  gap: 20px;
+}
+header .navibar2 div {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -35,16 +37,13 @@ header .navibar2 p {
   text-align: center;
   line-height: 50px;
   color: #424242;
-  margin-right: 25px;
   font-size: 0.9em;
+  margin-right: 5px;
 }
-header .navibar2 p img {
+header .navibar2 img {
   width: 15px;
   height: 15px;
   filter: opacity(0.5) drop-shadow(0 0 0 #424242);
-}
-header .navibar2 p:nth-child(2) {
-  margin-right: 50px;
 }
 main {
   min-height: 700px;
@@ -200,4 +199,7 @@ footer nav div .sub-menu {
   text-decoration: none;
   color: #6b6b6b;
   font-size: 0.8em;
+}
+.dropdown {
+  display: none;
 }

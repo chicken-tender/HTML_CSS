@@ -3,40 +3,32 @@
 }
 body {
   width: 100%;
-  max-width: 768px;
   margin: 0;
   padding: 0;
 }
 header {
-  height: 80%;
+  margin: 0 20px;
+  height: 5vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 15px;
 }
 header div #logo {
-  width: 140px;
-  margin: 10px 0 5px 0;
+  grid-area: logo;
+  width: 120px;
+  margin: 0;
 }
 header .navibar .quick-menu {
   display: none;
 }
-header .navibar2  {
-  all: unset;
+header .navibar2 p:nth-child(2) {
+  display: none;
 }
 header .navibar2 p {
-  all: unset;
+  display: none;
 }
-header .navibar2 p img {
-  width: 15px;
-  height: 15px;
-  filter: opacity(0.5) drop-shadow(0 0 0 #424242);
-}
-header .navibar2 p:nth-child(2) {
-  all: unset;
-}
+/*
+1. 헤더 아이콘 조정, 햄버거 메뉴 만들지(?)
+2. main 간격, img style 효과 주기
+*/
 main {
   display: flex;
   flex-wrap: wrap;
@@ -126,12 +118,19 @@ main .sublink-container .sublink-item a {
   text-align: center;
 }
 main .product {
+  margin: unset;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 160px;
+}
+main .product .product-item {
+  width: 90%;
+}
+main .product .product-item img {
+  width: 100%;
 }
 main .product .product-item h1 {
   font-size: 1.5em;
@@ -146,34 +145,45 @@ main .product .product-item a {
   font-size: 0.9em;
 }
 main .etc {
-  all: unset;
+  height: 100%;
+  align-self: flex-start;
+  margin-top: 150px;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 main .etc p {
-  all: unset;
+  margin: 0;
 }
 main .etc img {
   width: 30px;
   height: 30px;
-  margin: 0;
-}
-footer {
-  display: flex;
-  margin-top: 300px;
+  margin-right: 10px;
 }
 footer nav {
+  background-color: #eee;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 footer nav div {
-  all: unset;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
 }
 footer nav div .main-menu {
-  all: unset;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  text-align: left;
+  color: #6b6b6b;
+  font-size: 1.17em;
+  font-weight: 600;
 }
 footer nav div .sub-menu {
-  all: unset;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 0.8em;
 }
