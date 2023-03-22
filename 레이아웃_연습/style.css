@@ -50,8 +50,6 @@ main {
   min-height: 700px;
 }
 main .slide {
-  height: 700px;
-  background-color: blue;
   display: flex;
 }
 main .slide .product-desc {

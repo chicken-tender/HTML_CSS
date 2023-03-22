@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 768px;
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+header div #logo {
+  width: 140px;
+  margin: 10px 0 5px 0;
+}
+header .navibar .quick-menu {
+  display: none;
+}
+header .navibar2  {
+  all: unset;
+}
+header .navibar2 p {
+  all: unset;
+}
+header .navibar2 p img {
+  width: 15px;
+  height: 15px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #424242);
+}
+header .navibar2 p:nth-child(2) {
+  all: unset;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .slide {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .slide .product-desc {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 10px;
+  margin-left: 10px;
+}
+main .slide .product-desc h1 {
+  margin: 0;
+  font-size: 2em;
+  text-align: left;
+}
+main .slide .product-desc p {
+  margin: 0;
+  text-align: left;
+  
+}
+main .slide .product-desc .click {
+  display: inline-block;
+  width: 10 0px;
+  height: 40px;
+  background-color: #0067b8;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 0;
+}
+main .slide .product-desc .click a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 40px;
+  font-weight: bolder;
+  font-size: 0.8em;
+}
+main .slide .product-image {
+  width: 100%;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+main .slide .product-image img {
+  width: 100%;
+}
+main .sublink-container {
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 10px;
+  gap: 15px;
+
+}
+main .sublink-container .sublink-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+main .sublink-container .sublink-item .icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+main .sublink-container .sublink-item .icon img {
+  width: 100%;
+  height: 100%;
+}
+main .sublink-container .sublink-item a {
+  color: #0067b8;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+}
+main .product {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+main .product .product-item h1 {
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
+}
+main .product .product-item p {
+  font-size: 0.9em;
+  margin: 0 0 5px 0;
+}
+main .product .product-item a {
+  color: #0067b8;
+  font-size: 0.9em;
+}
+main .etc {
+  all: unset;
+}
+main .etc p {
+  all: unset;
+}
+main .etc img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+footer {
+  display: flex;
+  margin-top: 300px;
+}
+footer nav {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer nav div {
+  all: unset;
+}
+footer nav div .main-menu {
+  all: unset;
+}
+footer nav div .sub-menu {
+  all: unset;
+}
