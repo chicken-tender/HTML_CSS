@@ -8,7 +8,7 @@ header {
   align-items: center;
   position: relative;
 }
-header div #logo {
+header div .logo {
   width: 140px;
   margin: 20px;
 }
@@ -138,6 +138,17 @@ main .product .product-item {
   width: 380px;
   height: 210px;
 }
+main .product .product-item img {
+  width: 100%;
+  box-shadow: 2px 2px 5px #a1a1a1;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: .3s;
+}
+main .product .product-item img:hover {
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0.5;
+}
 main .product .product-item h1 {
   text-align: left;
   font-size: 1.8em;
@@ -183,11 +194,11 @@ footer nav {
 footer nav div {
   display: flex;
   flex-direction: column;
-  margin-right: 120px;
+  margin-right: 70px;
 }
 footer nav div .main-menu {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-decoration: none;
   text-align: left;
   color: #6b6b6b;
@@ -195,7 +206,7 @@ footer nav div .main-menu {
   font-weight: 600;
 }
 footer nav div .sub-menu {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
   text-decoration: none;
   color: #6b6b6b;
   font-size: 0.8em;
