@@ -40,11 +40,12 @@ header .navibar2 p {
   display: none;
 }
 header .navibar2 .search img, header .navibar2 .shopping-cart img, header .navibar2 .login img {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #424242);
 }
 header .navibar2 {
-  margin-right: 5px;
+  margin-right: 2px;
 }
 main {
   display: flex;
