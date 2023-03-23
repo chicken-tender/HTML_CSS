@@ -214,3 +214,9 @@ footer nav div .sub-menu {
 .dropdown {
   display: none;
 }
+.btn-primary {
+  float: left;
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+}

@@ -218,3 +218,6 @@ footer nav div .sub-menu {
   color: #6b6b6b;
   font-size: 0.8em;
 }
+.btn-primary {
+  right: 20px;
+}
