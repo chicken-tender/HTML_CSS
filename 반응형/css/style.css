@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: beige;
+  padding: 0 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 15em;
+  height: 5em;
+}
+.menu {
+  display: flex;
+}
+li {
+  list-style: none;
+  font-weight: bold;
+  padding: 30px;
+}
+.sns a {
+  text-decoration: none;
+}
+.sns a img {
+  width: 2em;
+  height: 2em;
+}
+@media only screen and (max-width: 48rem) {
+  .container {
+    flex-direction: column;
+  }
+}
